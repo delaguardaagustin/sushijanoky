@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sushijanoky · Sushi en San Joaquín</title>
+<meta name="description" content="Sushi hecho a tu pedido en San Joaquín: menús de 10 a 80 piezas, handrolls, ceviche y sushi acevichado.">
+<meta property="og:title" content="Sushijanoky · San Joaquín">
+<meta property="og:description" content="Sushi hecho a tu pedido en San Joaquín: menús de 10 a 80 piezas, handrolls, ceviche y sushi acevichado.">
+<meta property="og:image" content="https://delaguardaagustin.github.io/sushijanoky/assets/ig-10.jpg">
+<meta name="theme-color" content="#14110f">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--fondo:#14110f;--panel:#1f1a17;--tinta:#f6efe6;--gris:#b9aea2;--linea:#3a322c;--ac:#dc2626;--sobre:#fff;
+--accent:#dc2626;--line:#3a322c;--text:#f6efe6;--bg:#1f1a17;--surface:#1f1a17;--muted:#b9aea2;--asis-tone:#f6efe6;--tit:"Bebas Neue",Georgia,serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:400 1.03rem/1.6 "Manrope",system-ui,sans-serif;overflow-x:clip;-webkit-font-smoothing:antialiased}
+img,video{display:block;max-width:100%}a{color:inherit}button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+.wrap{width:min(1140px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--tit);font-weight:400;line-height:1.02;margin:0;text-wrap:balance}
+h2{font-size:clamp(2.3rem,6vw,4rem)}
+.ojo{font-weight:700;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ac);margin:0 0 12px}
+.tope{position:absolute;inset:0 0 auto;z-index:20}.tope .wrap{display:flex;justify-content:space-between;align-items:center;min-height:72px;gap:14px}
+.marca{font-family:var(--tit);font-size:1.4rem;color:#fff;text-decoration:none}
+.tope nav{display:flex;gap:22px;color:#fff;font-weight:600;font-size:.94rem}.tope nav a{text-decoration:none}.tope nav a:hover{text-decoration:underline;text-underline-offset:5px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:6px;background:var(--ac);color:var(--sobre);text-decoration:none;font-weight:700;transition:transform .18s,filter .18s}
+.btn:hover{filter:brightness(1.08);transform:translateY(-2px)}.btn:active{transform:none}.btn svg{width:20px;height:20px;fill:currentColor}
+.btn.lin{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.75)}
+.portada{position:relative;min-height:100svh;display:grid;align-items:end;color:#fff;background:#0c0a09;overflow:hidden;isolation:isolate}
+.portada .fondo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.portada::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,8,7,.55) 0,rgba(10,8,7,.1) 34%,rgba(10,8,7,.92) 100%)}
+.portada .hv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.pcont{width:min(1140px,100% - 40px);margin:0 auto;padding:110px 0 clamp(92px,12vh,64px);display:grid;gap:16px}
+.portada h1{font-size:clamp(3.4rem,13vw,8.4rem);letter-spacing:-.015em;max-width:12ch}
+.portada .sub{margin:0;font-weight:700;letter-spacing:.06em}.portada .frase{margin:0;font-size:clamp(1.08rem,2.3vw,1.3rem);max-width:38ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none;font-size:.9rem;font-weight:600}
+.chips li,.chips a{display:inline-flex;align-items:center;gap:7px;min-height:34px;padding:0 12px;border-radius:999px;background:rgba(0,0,0,.45);backdrop-filter:blur(6px);text-decoration:none}
+.punto{width:8px;height:8px;border-radius:50%;background:#9ca3af}.abierto .punto{background:#34d399;box-shadow:0 0 0 4px rgba(52,211,153,.25)}
+.acciones{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+section{padding:clamp(64px,10vw,110px) 0}
+.cartah{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:14px;margin-bottom:22px}
+.tabs{position:sticky;top:0;z-index:12;display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;background:var(--fondo);padding:10px 0;margin-bottom:18px;border-bottom:1px solid var(--linea)}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;min-height:44px;padding:0 18px;border-radius:999px;font-weight:700;color:var(--gris)}
+.tabs button[aria-selected=true]{background:var(--ac);color:var(--sobre)}
+.platos{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:0 44px}
+.platos li{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--linea)}
+.platos img{flex:none;width:112px;height:112px;object-fit:cover;border-radius:6px}
+.pt{flex:1;min-width:0;display:flex;flex-direction:column;gap:5px}.pt h3{font-size:1.42rem;line-height:1.12}.pt p{margin:0;color:var(--gris);font-size:.96rem;line-height:1.45}
+.pa{margin-top:auto;padding-top:6px;display:flex;justify-content:space-between;align-items:center;gap:12px}.pa b{font-size:1.1rem}
+.pa a{margin-left:auto;min-height:38px;display:inline-flex;align-items:center;padding:0 16px;border-radius:999px;font-weight:700;font-size:.9rem;text-decoration:none;color:var(--ac);box-shadow:inset 0 0 0 1.5px var(--ac)}
+.pa a:hover{background:var(--ac);color:var(--sobre)}.nota{margin:20px 0 0;color:var(--gris);font-size:.93rem}
+.videos{background:var(--panel)}.vfila{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:26px 20px 8px;scrollbar-width:thin;justify-content:safe center}
+.vfila figure{flex:0 0 min(70vw,270px);margin:0;scroll-snap-align:center}
+.vfila video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:6px;background:#000}
+.vfila figcaption{margin-top:8px;color:var(--gris);font-size:.9rem}
+.galeria{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:clamp(130px,19vw,240px);gap:8px;margin-top:26px}
+.galeria button{padding:0;overflow:hidden;border-radius:6px}.galeria img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.galeria button:hover img{transform:scale(1.05)}
+.g0{grid-column:span 2;grid-row:span 2}.g3{grid-column:span 2}
+dialog.visor{border:0;padding:0;background:transparent;max-width:94vw;max-height:92vh}dialog.visor::backdrop{background:rgba(0,0,0,.88)}dialog.visor img{max-height:88vh;border-radius:8px}
+.opis{background:var(--ac);color:var(--sobre)}.opis .ojo{color:inherit;opacity:.85}
+.rfila{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:26px;padding-bottom:10px;scrollbar-width:none}.rfila::-webkit-scrollbar{display:none}
+.rfila blockquote{flex:0 0 min(84%,370px);margin:0;scroll-snap-align:start;background:rgba(0,0,0,.14);border-radius:6px;padding:22px}
+.rfila p{margin:0;font-family:var(--tit);font-size:1.32rem;line-height:1.25}.rfila cite{display:block;margin-top:12px;font-style:normal;font-size:.92rem;opacity:.85}
+.opis .ver{display:inline-block;margin-top:14px;font-weight:700}
+.visita .g2c{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+table{width:100%;border-collapse:collapse;margin-top:18px}th,td{text-align:left;padding:11px 0;border-bottom:1px solid var(--linea);font-weight:500}td{text-align:right;color:var(--gris)}
+.visita ul{list-style:none;padding:0;margin:20px 0}.visita li{padding:3px 0}.mapa{width:100%;aspect-ratio:4/3;border:0;border-radius:6px}
+footer{padding:30px 0 40px;border-top:1px solid var(--linea);color:var(--gris);font-size:.93rem}footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+.fab{position:fixed;right:16px;bottom:16px;z-index:40;display:inline-flex;align-items:center;gap:9px;min-height:54px;padding:0 20px;border-radius:999px;background:var(--ac);color:var(--sobre);font-weight:700;text-decoration:none;box-shadow:0 12px 30px -10px rgba(0,0,0,.6)}
+.fab svg{width:21px;height:21px;fill:currentColor}
+.bar{display:none}
+.aparece{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.aparece.si{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.aparece{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media (max-width:820px){
+  .tope nav{display:none}.platos{grid-template-columns:1fr}.visita .g2c{grid-template-columns:1fr}
+  .galeria{grid-template-columns:repeat(2,1fr);grid-auto-rows:44vw}.g0{grid-column:span 2}.g3{grid-column:auto}
+  .portada{min-height:calc(100svh - 96px)}.portada h1{font-size:clamp(3rem,15vw,4.6rem)}.portada .frase{font-size:1.02rem}.btn.lin{display:none}
+  .portada::after{background:linear-gradient(180deg,rgba(10,8,7,.5) 0,rgba(10,8,7,.2) 26%,rgba(10,8,7,.95) 72%)}
+  .pcont{padding-bottom:142px;gap:12px}.btn{flex:1 1 auto}
+  .muestra{font-size:.74rem!important}.muestra div{padding:6px 0!important;gap:4px 10px!important}.muestra a{padding:5px 12px!important}
+  .bar{display:grid;grid-template-columns:1.4fr 1fr 1fr;position:fixed;inset:auto 0 0;z-index:35;background:var(--panel);border-top:1px solid var(--linea);padding-bottom:env(safe-area-inset-bottom)}
+  .bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:62px;font-size:.78rem;font-weight:700;text-decoration:none}
+  .bar a:first-child{background:var(--ac);color:var(--sobre)}.bar svg{width:20px;height:20px;fill:currentColor}
+  .fab{bottom:74px;right:12px;min-height:50px;padding:0 16px}footer{padding-bottom:84px}
+  .asis{bottom:134px!important;max-height:calc(100svh - 150px)}#quien-hizo-btn{bottom:78px!important}
+}
+</style>
+</head>
+<body>
+<style>
+.muestra{background:#0c0f12;color:#e9edf1;font:500 .86rem/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;border-bottom:1px solid #d8ac54}
+.muestra div{width:min(1220px,100% - 28px);margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 18px;padding:9px 0;text-align:center}
+.muestra b{color:#d8ac54;font-weight:700}
+.muestra a{background:#d8ac54;color:#0c0f12;font-weight:700;text-decoration:none;border-radius:999px;padding:7px 15px;white-space:nowrap}
+.muestra a:hover{background:#e9c57a}
+</style>
+<div class="muestra"><div><span><b>Página de muestra hecha para Sushijanoky por SENTRY-CODE.</b> Publicada con su dominio en 48 horas · $120.000 pago único: incluye dominio, 3 meses de mantención y la placa de reseñas de Google de regalo.</span><a href="https://wa.me/56974479565?text=Hola%20Agust%C3%ADn%2C%20vi%20la%20p%C3%A1gina%20de%20muestra%20de%20Sushijanoky%20y%20quiero%20publicarla" target="_blank" rel="noopener">Quiero mi página</a></div></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2Zm5.5 12.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.6.2-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.8-1.6-3.9-3.5-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.9-2.1-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-1 .9-1.2 2-1 3.2.4 2 1.6 3.6 3.4 5 2.4 2 4.2 2.4 5.7 2.4.7 0 1.6-.1 2.3-.6.6-.4 1.7-1.1 1.9-2.1.2-.9.2-1.7.1-1.8-.1-.2-.3-.2-.6-.4Z"/></symbol><symbol id="i-tel" viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></symbol><symbol id="i-mapa" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5a2.500 2.500 0 1 1 0-5 2.500 2.500 0 0 1 0 5Z"/></symbol><symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/></symbol></svg>
+<main>
+<section class="portada" style="padding:0">
+<header class="tope"><div class="wrap"><a class="marca" href="#">Sushijanoky</a><nav aria-label="Secciones"><a href="#carta">Carta</a><a href="#fotos">Fotos</a><a href="#opiniones">Opiniones</a><a href="#visita">Cómo llegar</a></nav></div></header>
+<video class="hv" autoplay muted loop playsinline preload="metadata" poster="assets/ig-10.jpg" aria-label="Video de Sushijanoky"><source src="assets/hero.mp4" type="video/mp4"></video>
+<div class="pcont">
+<p class="sub">Sushi · San Joaquín</p>
+<h1>Sushijanoky</h1>
+<p class="frase">Sushi hecho a tu pedido en San Joaquín: menús de 10 a 80 piezas, handrolls, ceviche y sushi acevichado.</p>
+<ul class="chips"><li id="estado"><span class="punto"></span><span>Revisa el horario</span></li><li><a href="https://www.google.com/maps/search/?api=1&query=Sushijanoky%20Pje.%20Benozzo%20Gozzoli%204382%20San%20Joaqu%C3%ADn" target="_blank" rel="noopener">132 opiniones en Google · 4,8 ★</a></li></ul>
+<div class="acciones"><a class="btn" href="#carta">Ver la carta</a><a class="btn lin" href="https://wa.me/56953205665?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir por WhatsApp</a></div>
+</div>
+</section>
+<section id="carta"><div class="wrap">
+<div class="cartah"><div><p class="ojo">Carta</p><h2>Lista de menú</h2></div></div>
+<div class="tabs" role="tablist" aria-label="Categorías de la carta"><button type="button" role="tab" aria-selected="true" data-c="0">Menús</button><button type="button" role="tab" aria-selected="false" data-c="1">Especiales</button><button type="button" role="tab" aria-selected="false" data-c="2">Para acompañar</button></div>
+<ol class="platos" data-c="0"><li class=""><div class="pt"><h3>Menú 10 piezas</h3><div class="pa"><b>$5.500</b><a href="https://wa.me/56953205665?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quiero%20hacer%20un%20pedido%3A%20Men%C3%BA%2010%20piezas" target="_blank" rel="noopener">Pedir</a></div></div></li><li class=""><div class="pt"><h3>Menú 20 piezas</h3><div class="pa"><b>$10.500</b><a href="https://wa.me/56953205665?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quiero%20hacer%20un%20pedido%3A%20Men%C3%BA%2020%20piezas" target="_blank" rel="noopener">Pedir</a></div></div></li><li class=""><div class="pt"><h3>Menú 30 piezas</h3><div class="pa"><b>$14.000</b><a href="https://wa.me/56953205665?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quiero%20hacer%20un%20pedido%3A%20Men%C3%BA%2030%20piezas" target="_blank" rel="noopener">Pedir</a></div></div></li><li class=""><div class="pt"><h3>Menú 40 piezas</h3><div class="pa"><b>$17.500</b><a href="https://wa.me/56953205665?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quiero%20hacer%20un%20pedido%3A%20Men%C3%BA%2040%20piezas" target="_blank" rel="noopener">Pedir</a></div></div></li><li class=""><div class="pt"><h3>Menú 50 piezas</h3><div class="pa"><b>$22.000</b><a href="https://wa.me/56953205665?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quiero%20hacer%20un%20pedido%3A%20Men%C3%BA%2050%20piezas" target="_blank" rel="noopener">Pedir</a></div></div></li><li class=""><div class="pt"><h3>Menú 60 piezas</h3><div class="pa"><b>$25.000</b><a href="https://wa.me/56953205665?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quiero%20hacer%20un%20pedido%3A%20Men%C3%BA%2060%20piezas" target="_blank" rel="noopener">Pedir</a></div></div></li><li class=""><div class="pt"><h3>Menú 70 piezas</h3><div class="pa"><b>$28.000</b><a href="https://wa.me/56953205665?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quiero%20hacer%20un%20pedido%3A%20Men%C3%BA%2070%20piezas" target="_blank" rel="noopener">Pedir</a></div></div></li><li class=""><div class="pt"><h3>Menú 80 piezas</h3><div class="pa"><b>$30.000</b><a href="https://wa.me/56953205665?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quiero%20hacer%20un%20pedido%3A%20Men%C3%BA%2080%20piezas" target="_blank" rel="noopener">Pedir</a></div></div></li></ol><ol class="platos" data-c="1" hidden><li class="con"><img src="assets/ig-10.jpg" alt="Sushi acevichado" loading="lazy"><div class="pt"><h3>Sushi acevichado</h3><div class="pa"><b>$10.000</b><a href="https://wa.me/56953205665?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quiero%20hacer%20un%20pedido%3A%20Sushi%20acevichado" target="_blank" rel="noopener">Pedir</a></div></div></li><li class=""><div class="pt"><h3>Sushi sin arroz</h3><div class="pa"><b>$7.000</b><a href="https://wa.me/56953205665?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quiero%20hacer%20un%20pedido%3A%20Sushi%20sin%20arroz" target="_blank" rel="noopener">Pedir</a></div></div></li><li class="con"><img src="assets/ig-07.jpg" alt="Camarón apanado" loading="lazy"><div class="pt"><h3>Camarón apanado</h3><div class="pa"><b>$5.000</b><a href="https://wa.me/56953205665?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quiero%20hacer%20un%20pedido%3A%20Camar%C3%B3n%20apanado" target="_blank" rel="noopener">Pedir</a></div></div></li><li class=""><div class="pt"><h3>Ceviche</h3><div class="pa"><b>$9.000</b><a href="https://wa.me/56953205665?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quiero%20hacer%20un%20pedido%3A%20Ceviche" target="_blank" rel="noopener">Pedir</a></div></div></li></ol><ol class="platos" data-c="2" hidden><li class=""><div class="pt"><h3>Gyozas, 5 unidades</h3><div class="pa"><b>$3.500</b><a href="https://wa.me/56953205665?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quiero%20hacer%20un%20pedido%3A%20Gyozas%2C%205%20unidades" target="_blank" rel="noopener">Pedir</a></div></div></li><li class=""><div class="pt"><h3>Hand roll</h3><div class="pa"><b>$3.800</b><a href="https://wa.me/56953205665?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quiero%20hacer%20un%20pedido%3A%20Hand%20roll" target="_blank" rel="noopener">Pedir</a></div></div></li></ol>
+<p class="nota">Valores de la lista que publicó el local en su Instagram. Se confirman al pedir por WhatsApp.</p>
+</div></section>
+
+<section id="fotos"><div class="wrap aparece"><p class="ojo">Fotos</p><h2>Así se ve</h2><div class="galeria"><button type="button" class="g0" data-src="assets/ig-10.jpg" aria-label="Ampliar foto de Sushijanoky"><img src="assets/ig-10.jpg" alt="Sushi" loading="lazy"></button><button type="button" class="g1" data-src="assets/ig-11.jpg" aria-label="Ampliar foto de Sushijanoky"><img src="assets/ig-11.jpg" alt="Sushi burger" loading="lazy"></button><button type="button" class="g2" data-src="assets/ig-07.jpg" aria-label="Ampliar foto de Sushijanoky"><img src="assets/ig-07.jpg" alt="Bandeja de sushi" loading="lazy"></button><button type="button" class="g3" data-src="assets/ig-09.jpg" aria-label="Ampliar foto de Sushijanoky"><img src="assets/ig-09.jpg" alt="Rolls" loading="lazy"></button><button type="button" class="g4" data-src="assets/ig-01.jpg" aria-label="Ampliar foto de Sushijanoky"><img src="assets/ig-01.jpg" alt="Pedidos" loading="lazy"></button><button type="button" class="g5" data-src="assets/ig-00.jpg" aria-label="Ampliar foto de Sushijanoky"><img src="assets/ig-00.jpg" alt="Clientes" loading="lazy"></button></div></div></section>
+<section class="opis" id="opiniones"><div class="wrap"><p class="ojo">Opiniones en Google</p><h2>132 opiniones en Google · 4,8 ★</h2><div class="rfila"><blockquote><p>“Bastante rico, ingredientes de calidad, el Camarón muy sabroso, el pollo no está seco, linda presentación y servicio del dueño un 7”</p><cite>Cristobal R., en Google</cite></blockquote><blockquote><p>“Ta ricazo el sushi TA mortal! Me comí todo saludos”</p><cite>Facundo C., en Google</cite></blockquote><blockquote><p>“Me comentaron de su local , y decidi ir con mis amigos espectacular , todo de primera ,💪💪💪💪💪💪💪 RECOMENDADO 💪”</p><cite>Carlos R., en Google</cite></blockquote></div><a class="ver" href="https://www.google.com/maps/search/?api=1&query=Sushijanoky%20Pje.%20Benozzo%20Gozzoli%204382%20San%20Joaqu%C3%ADn" target="_blank" rel="noopener">Ver todas en Google</a></div></section>
+<section class="visita" id="visita"><div class="wrap g2c">
+<div class="aparece"><p class="ojo">Visítanos</p><h2>Cómo llegar</h2><table aria-label="Horario"><tr><th>Lunes</th><td>16:00 a 01:00</td></tr><tr><th>Martes a jueves</th><td>16:00 a 00:30</td></tr><tr><th>Viernes</th><td>15:30 a 02:30</td></tr><tr><th>Sábado</th><td>15:00 a 03:30</td></tr><tr><th>Domingo</th><td>18:00 a 01:00</td></tr></table>
+<ul><li>Pje. Benozzo Gozzoli 4382, San Joaquín</li><li>Rellenos y envueltos a elección</li><li><a href="tel:+56953205665">+56 9 5320 5665</a></li><li><a href="https://www.instagram.com/sushijanoky/" target="_blank" rel="noopener">Instagram @sushijanoky</a></li></ul>
+<a class="btn" href="https://wa.me/56953205665?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir por WhatsApp</a></div>
+<iframe class="mapa" src="https://www.google.com/maps?q=Pje.%20Benozzo%20Gozzoli%204382%2C%20San%20Joaqu%C3%ADn%2C%20Chile&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Sushijanoky"></iframe>
+</div></section>
+</main>
+<footer><div class="wrap"><span>Sushijanoky · Pje. Benozzo Gozzoli 4382, San Joaquín</span><span>&copy; <span id="y"></span></span></div></footer>
+<dialog class="visor" id="visor" aria-label="Foto ampliada"><img alt=""></dialog>
+<nav class="bar" aria-label="Acciones rápidas"><a href="https://wa.me/56953205665?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir</a><a href="tel:+56953205665"><svg aria-hidden="true"><use href="#i-tel"/></svg>Llamar</a><a href="https://www.google.com/maps/search/?api=1&query=Sushijanoky%20Pje.%20Benozzo%20Gozzoli%204382%20San%20Joaqu%C3%ADn" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-mapa"/></svg>Llegar</a></nav>
+<a class="fab" href="https://wa.me/56953205665?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg><span class="fab-txt">Te ayudo a pedir</span></a>
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+(function(){var H={"0": [["18:00", "01:00"]], "1": [["16:00", "01:00"]], "2": [["16:00", "00:30"]], "3": [["16:00", "00:30"]], "4": [["16:00", "00:30"]], "5": [["15:30", "02:30"]], "6": [["15:00", "03:30"]]};var el=document.getElementById('estado');
+var p=new Intl.DateTimeFormat('en-GB',{timeZone:'America/Santiago',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+var o={};p.forEach(function(x){o[x.type]=x.value});var D=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(o.weekday),ah=(+o.hour%24)*60+ +o.minute;
+var min=function(s){var a=s.split(':');return +a[0]*60+ +a[1]},abierto=false,cierre='',t=el.lastElementChild;
+(H[D]||[]).forEach(function(r){var c=min(r[1]);if(c<=min(r[0]))c+=1440;if(ah>=min(r[0])&&ah<c){abierto=true;cierre=r[1]}});
+(H[(D+6)%7]||[]).forEach(function(r){if(min(r[1])<=min(r[0])&&ah<min(r[1])){abierto=true;cierre=r[1]}});
+if(abierto){el.classList.add('abierto');t.textContent='Abierto hasta las '+cierre}else{t.textContent='Cerrado ahora'}})();
+(function(){var bs=document.querySelectorAll('.tabs button'),ls=document.querySelectorAll('.platos');bs.forEach(function(b){b.addEventListener('click',function(){
+bs.forEach(function(x){x.setAttribute('aria-selected',x===b)});ls.forEach(function(l){l.hidden=l.dataset.c!==b.dataset.c});b.scrollIntoView({inline:'center',block:'nearest'})})})})();
+(function(){var v=document.getElementById('visor'),i=v.querySelector('img');document.querySelectorAll('.galeria button').forEach(function(b){b.addEventListener('click',function(){i.src=b.dataset.src;i.alt=b.querySelector('img').alt;v.showModal()})});v.addEventListener('click',function(){v.close()})})();
+(function(){var quieto=matchMedia('(prefers-reduced-motion:reduce)').matches,h=document.querySelector('video.hv');if(h&&quieto)h.pause();
+if(!('IntersectionObserver' in window)){document.querySelectorAll('.aparece').forEach(function(e){e.classList.add('si')});return}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('si');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});document.querySelectorAll('.aparece').forEach(function(e){io.observe(e)});
+var vo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&!quieto){var q=e.target.play();if(q)q.catch(function(){})}else e.target.pause()})},{threshold:.5});document.querySelectorAll('video[data-v]').forEach(function(x){vo.observe(x)})})();
+</script>
+<link rel="stylesheet" href="asistente.css">
+<script>window.ASISTENTE={"negocio": "Sushijanoky", "persona": "Sushijanoky", "wa": "56953205665", "boton": "Te ayudo a pedir", "saludo": "Hola, soy el asistente de Sushijanoky. ¿Qué se te antoja hoy?", "servicios": [{"n": "Menús", "info": "De 10 a 80 piezas, desde $5.500.", "opts": [], "kw": "menu|menú|pieza"}, {"n": "Especiales", "info": "Acevichado, sin arroz y ceviche.", "opts": [], "kw": "acevich|sin arroz|ceviche|camaron|camarón"}, {"n": "Para acompañar", "info": "Gyozas y hand roll.", "opts": [], "kw": "gyoza|hand"}], "faq": [{"pri": true, "kw": "precio|valor|cuanto|costo|cobra", "r": "Los precios están en la carta de esta página, según la lista que publica el local, y se confirman al pedir por WhatsApp."}, {"kw": "carta|menu|menú|que tienen|qué tienen|platos", "r": "La carta está en esta misma página. Dime qué se te antoja y te dejo el pedido listo para WhatsApp."}, {"kw": "donde|dónde|direccion|dirección|ubicacion|ubicación|llegar|san joaquín", "r": "Estamos en Pje. Benozzo Gozzoli 4382, San Joaquín."}, {"kw": "horario|abre|cierra|abierto|dias|días|que hora|qué hora|domingo|sabado|sábado", "r": "Atendemos lunes: 16:00 a 01:00; martes a jueves: 16:00 a 00:30; viernes: 15:30 a 02:30; sábado: 15:00 a 03:30; domingo: 18:00 a 01:00."}, {"kw": "delivery|despacho|domicilio|envio|envío|retiro|llevar", "r": "Escríbenos por WhatsApp para reservar tu pedido y coordinar la entrega."}, {"kw": "pago|tarjeta|debito|débito|credito|crédito|efectivo|transferencia", "r": "Los medios de pago se confirman por WhatsApp."}]};</script>
+<script src="asistente.js" defer></script>
+<style>
+#quien-hizo-btn{position:fixed;left:14px;bottom:14px;z-index:9998;background:#0c0f12;color:#f2f4f6;border:1px solid #d8ac54;border-radius:999px;padding:10px 15px;font:600 .84rem/1 system-ui,-apple-system,"Segoe UI",sans-serif;box-shadow:0 10px 26px -12px rgba(0,0,0,.6);cursor:pointer}
+#quien-hizo-btn b{color:#d8ac54}
+@media (max-width:760px){#quien-hizo-btn{bottom:150px;left:10px;padding:9px 13px;font-size:.8rem}}
+#quien-hizo{border:0;border-radius:20px;padding:0;width:min(460px,calc(100% - 24px));max-height:calc(100% - 40px);background:#0c0f12;color:#e9edf1;font:400 .95rem/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+#quien-hizo::backdrop{background:rgba(0,0,0,.6)}
+#quien-hizo .qh{padding:22px 20px 18px}#quien-hizo h3{margin:0 0 6px;font-size:1.18rem;color:#fff}#quien-hizo h4{margin:18px 0 8px;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:#d8ac54}
+#quien-hizo p{margin:0;color:#c3cbd3}#quien-hizo ol{margin:0;padding-left:20px;color:#c3cbd3}#quien-hizo li{margin:4px 0}#quien-hizo li b,#quien-hizo p b{color:#fff}
+.qh-cli{display:flex;justify-content:space-between;gap:10px;padding:9px 12px;margin:6px 0;border:1px solid #26303a;border-radius:12px;color:#fff;text-decoration:none}.qh-cli span{color:#8f9aa5;font-size:.82rem;text-align:right}.qh-cli:hover{border-color:#d8ac54}
+.qh-bot{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.qh-bot a,.qh-bot button{flex:1 1 auto;text-align:center;border-radius:999px;padding:11px 14px;font:700 .9rem/1 system-ui,sans-serif;text-decoration:none;cursor:pointer;border:1px solid #3a4651;background:transparent;color:#e9edf1}
+.qh-bot .si{background:#25d366;border-color:#25d366;color:#06280f}.qh-no{display:block;margin-top:12px;color:#8f9aa5;font-size:.84rem;text-align:center}
+</style>
+<button id="quien-hizo-btn" type="button" onclick="document.getElementById('quien-hizo').showModal()">¿Quién hizo <b>esta página</b>?</button>
+<dialog id="quien-hizo" aria-label="Quién hizo esta página"><div class="qh">
+  <h3>Hola, soy Agustín, de SENTRY-CODE</h3>
+  <p>Armé esta página con las fotos y las opiniones que ya son públicas en la ficha de Google de <b>Sushijanoky</b>, para que la vea funcionando antes de decidir. No tiene que pagar nada para verla.</p>
+  <h4>Ya confiaron en nosotros</h4><a class="qh-cli" href="https://www.vivasushi.cl/" target="_blank" rel="noopener"><b>Viva Sushi</b><span>San Ramón · pedidos por WhatsApp</span></a><a class="qh-cli" href="https://www.transportesobelisco.cl/" target="_blank" rel="noopener"><b>Transportes Obelisco</b><span>Santiago · fletes y mudanzas</span></a><a class="qh-cli" href="https://residenciaseniorwall.cl/" target="_blank" rel="noopener"><b>Residencia Senior Wall</b><span>San Carlos · residencia</span></a><a class="qh-cli" href="https://festivalpewmaantu.cl/" target="_blank" rel="noopener"><b>Festival Pewma Antü</b><span>La Cisterna · festival folclórico</span></a>
+  <h4>Cómo funciona</h4>
+  <ol><li>Me dice qué le cambiaría: textos, fotos, colores, servicios.</li><li>La publico con su propio dominio .cl en 48 horas.</li><li><b>Paga recién cuando la ve publicada:</b> $120.000, una sola vez. Sin mensualidad obligatoria.</li></ol>
+  <h4>Incluye</h4><p>Dominio por un año, 3 meses de cambios sin costo y la placa para que sus clientes le dejen reseñas en Google.</p>
+  <div class="qh-bot"><a class="si" href="https://wa.me/56974479565?text=Hola%20Agust%C3%ADn%2C%20vi%20la%20p%C3%A1gina%20de%20muestra%20de%20Sushijanoky" target="_blank" rel="noopener">Hablar con Agustín</a><a href="https://sentry-code.cl/nosotros/" target="_blank" rel="noopener">Quiénes somos</a><button type="button" onclick="this.closest('dialog').close()">Cerrar</button></div>
+  <a class="qh-no" href="https://wa.me/56974479565?text=Hola%20Agust%C3%ADn%2C%20por%20ahora%20no%20me%20interesa%20la%20p%C3%A1gina%20de%20Sushijanoky.%20Puedes%20borrarla." target="_blank" rel="noopener">¿No le interesa? Avíseme y la borro.</a>
+</div></dialog>
+<!-- contador de visitas -->
+<script>(function(){try{var L=localStorage,S=sessionStorage;if(location.search.indexOf('yo=1')>-1)L.setItem('soy-de-la-casa','1');
+if(L.getItem('soy-de-la-casa')||S.getItem('visita-contada'))return;S.setItem('visita-contada','1');
+var s=location.pathname.split('/').filter(Boolean)[0]||'',c=JSON.stringify({s:s});if(!s)return;
+if(navigator.sendBeacon)navigator.sendBeacon('https://n8n-production-003b9.up.railway.app/webhook/visita',c);else fetch('https://n8n-production-003b9.up.railway.app/webhook/visita',{method:'POST',body:c,keepalive:true});}catch(e){}})();</script>
+</body>
+</html>
